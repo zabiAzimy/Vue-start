@@ -1,26 +1,39 @@
 <template>
+  <HelloWorld msg="Welcome to learning Vue.js"/>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PAGES />
+  <Inputboxes />
+  <hr>
+  <ShowHide />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import PAGES from './components/new_onef.vue'
+import Inputboxes from './components/inputboxes.vue';
+import ShowHide from './components/show_hide.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    PAGES,
+    Inputboxes,
+    ShowHide
+}
 }
 </script>
 
 <style>
+body{
+  background-color: #001D4A;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(22, 165, 58);
   margin-top: 60px;
 }
 </style>
